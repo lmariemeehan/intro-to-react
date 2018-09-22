@@ -12,19 +12,25 @@
     <script type="text/babel">
 
       class Feeling extends React.Component {
-        render () {
-          return (
-            <div>
-              <h1>I am feeling very, very tired at the moment.</h1>
-            </div>
-        );
+        constructor (props) {
+          super (props);
+          this.state = {
+            number: 2
+          }
+        }
+          render () {
+            return (
+              <div>
+                <h1>I am feeling very, very {this.props.emotion} at the moment.</h1>
+                <p>Current week learning React: {this.state.number}</p>
+              </div>
+          );
+        }
       }
-    }
 
     ReactDOM.render (
-    <Feeling />, document.getElementById('simple')
+    <Feeling emotion="happy" />, document.getElementById('simple')
   );
 </script>
 </body>
 </html>
-

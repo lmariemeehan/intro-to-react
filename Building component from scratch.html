@@ -8,12 +8,13 @@
 
   <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
- <script type="text/babel">
+ <script>
 
     	function Feelings(props) {
+        console.log("Feelings");
     	return <h1>I am feeling, {props.emotion}</h1>;
     }
-    	const element = <I am feeling emotion="tired" />;
+    	const element = <Feelings emotion="tired" />;
 
     	ReactDOM.render(
     		element,

@@ -1,0 +1,50 @@
+####Exercises
+
+Before You Begin: Create a new Git feature branch for this assignment. See Git Checkpoint Workflow: Before Each Assignment for details.
+
+>In your own words, explain the essential differences between props and state in React. Which is immutable or read-only, and which changes? Submit your response in the submission text area and discuss the answer with your mentor.
+
+A: Props are immutable and the passed in properties are passed in externally. A component's state is internal and is changeable.
+
+>Read the React official documentation on components and props, and brush up on JavaScript ES6 *classes
+
+>Build upon your component from the previous checkpoint's assignment, add in state and props to make sure you have fully mastered these core React properties.
+When You're Done: Commit your assignment work in Git. See Git Checkpoint Workflow: After Each Assignment for details.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Building component from scratch part 2</title>
+</head>
+<body>
+    <div id="simple"></div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+    <script type="text/babel">
+
+      class Feeling extends React.Component {
+        constructor (props) {
+          super (props);
+          this.state = {
+            number: 2
+          }
+        }
+          render () {
+            return (
+              <div>
+                <h1>I am feeling very, very {this.props.emotion} at the moment.</h1>
+                <p>Current week learning React: {this.state.number}</p>
+              </div>
+          );
+        }
+      }
+
+    ReactDOM.render (
+    <Feeling emotion="happy" />, document.getElementById('simple')
+  );
+</script>
+</body>
+</html>

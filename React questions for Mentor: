@@ -1,0 +1,5 @@
+React questions for Mentor:
+
+1. Look at my original "Build component from scratch" html file and tell me why it's not working. I tried building this while looking at Facebook's React instructions and couldn't seem to get it to work. I was able to build a second React component with Bloc's one example just fine though.
+
+2. I'm trying to understand, why are props read-only and not state?? Seems backwards to me.
