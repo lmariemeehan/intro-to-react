@@ -1,0 +1,9 @@
+####Exercises
+
+>In your own words, explain the React core concept of encapsulation. Discuss why this React principle is important in application development.
+
+A: React's core concept of encapsulation basically refers to components that contains a state. State acts like a local variable does in JavaScript, where it's only accessible to the component that it is within. It is important within application development because it helps bind data and functions together, keeping it hidden, and not be influenced by anything outside of it.  
+
+>Read the React Official Document on handling events
+
+Done!
